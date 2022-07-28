@@ -288,21 +288,21 @@ a {
 .futures-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
 }
 
 .futures-section-item {
-    
     width: 270px;
-    height: 120px;
+}
 
+.futures-element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-}
 
-.futures-icon {
-    margin: 25px 100px;
 }
 
 .future-title { 
