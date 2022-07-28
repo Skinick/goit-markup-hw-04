@@ -398,8 +398,7 @@ margin-bottom: 16px;
     opacity: 0.87;
 }
 
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover {
     color: var(--white-color);
     background-color: var(--accent-color);
 
@@ -413,8 +412,8 @@ margin-bottom: 16px;
 
 .social-list-icon:hover,
 .social-list-icon:focus {
-    fill: var(--white-color);
-}
+    fill: currentColor;
+} 
 
 
 
@@ -427,9 +426,8 @@ margin-bottom: 16px;
 }
 
 .customers-list-item {
-    width: 170px;
-    height: 92px;
     border: 1px solid #AFB1B8
+    
 }
 .customers-list-item:focus,
 .customers-list-item:hover {
@@ -438,13 +436,17 @@ margin-bottom: 16px;
 }
 
 
-.customers-list-link {
+.customers-list-link { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
-    height: 92px;     
+    height: 92px;
+    
 }
 
 .customers-list-icon {
-    margin: 16px 32px;
+    
     fill: var(--icons-color);
 }
 
@@ -501,10 +503,6 @@ margin-bottom: 16px;
 
 .phone-number-footer {
     color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-left-side {
-
 }
 
 .footer-right-side {
@@ -621,14 +619,9 @@ gap: 10px;
     gap: 30px; 
 }
 
-.project-card {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-card-title:hover {
-    cursor: pointer;
-    background: var(--accent-color);
+.project-card-link:hover,
+.project-card-link:focus {    
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
