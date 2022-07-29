@@ -398,24 +398,19 @@ margin-bottom: 16px;
     opacity: 0.87;
 }
 
-.social-list-link:hover {
-    color: var(--white-color);
-    background-color: var(--accent-color);
 
-    
+.social-list-link:hover {
+    background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon {
+    fill: var(--white-color);
 }
 
 .social-list-icon {
     fill: var(--secondary-text-color);
 
 }
-
-.social-list-icon:hover,
-.social-list-icon:focus {
-    fill: currentColor;
-} 
-
-
 
         /* Постоянные клиенты */
 
@@ -425,16 +420,15 @@ margin-bottom: 16px;
     gap: 30px;
 }
 
-.customers-list-item {
-    border: 1px solid #AFB1B8
-    
-}
-.customers-list-item:focus,
-.customers-list-item:hover {
-    color: var(--accent-color);
+
+.customers-list-link:hover {
     border: 1px solid #2196F3
 }
 
+
+.customers-list-link:hover .customers-list-icon {
+    fill: var(--accent-color);
+}
 
 .customers-list-link { 
     display: flex;
@@ -442,11 +436,12 @@ margin-bottom: 16px;
     align-items: center;
     width: 170px;
     height: 92px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
     
 }
 
-.customers-list-icon {
-    
+.customers-list-icon {   
     fill: var(--icons-color);
 }
 
