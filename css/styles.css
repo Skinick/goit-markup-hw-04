@@ -208,7 +208,7 @@ a {
 .hero { 
     justify-content: center;
     align-items: center;
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding: 0;
     text-align: center;
